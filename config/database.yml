@@ -1,0 +1,41 @@
+# config/database.yml
+# Arquivo de configuração de banco de dados para Rails
+# Configurado para PostgreSQL no Windows
+# Inclui boas práticas para desenvolvimento, teste e produção
+
+# Configuração padrão para todos os ambientes
+default: &default
+  adapter: postgresql          # Usando PostgreSQL
+  encoding: unicode            # Encoding recomendado para Rails
+  host: localhost              # Host do servidor PostgreSQL
+  port: 5432                   # Porta padrão do PostgreSQL
+  username: postgres           # Usuário do PostgreSQL
+  password: Deus               # Senha do usuário
+  pool: 5                      # Número máximo de conexões simultâneas
+  timeout: 5000                # Tempo máximo de espera (ms)
+
+# Ambiente de desenvolvimento
+development:
+  <<: *default
+  database: blog_development   # Nome do banco de desenvolvimento
+
+# Ambiente de teste
+test:
+  <<: *default
+  database: blog_test          # Nome do banco de teste
+
+# Ambiente de produção
+production:
+  <<: *default
+  database: blog_production    # Nome do banco de produção
+  # Para segurança, use variáveis de ambiente para usuário e senha:
+  # username: <%= ENV['PG_USERNAME'] %>
+  # password: <%= ENV['PG_PASSWORD'] %>
+
+# OBSERVAÇÕES:
+# 1. Se quiser alternar para SQLite temporariamente, substitua 'postgresql' por 'sqlite3'
+#    e defina 'database' como o caminho para o arquivo .sqlite3, ex: db/development.sqlite3
+# 2. Sempre teste a conexão antes de rodar 'rails db:create':
+#       psql -U postgres -h localhost -p 5432
+# 3. No Windows, garanta que a porta 5432 não está bloqueada pelo firewall.
+
