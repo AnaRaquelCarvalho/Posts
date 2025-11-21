@@ -9055,3 +9055,174 @@ app/controllers/posts_controller.rb:12:in 'PostsController#show'
   [1m[36mActiveRecord::InternalMetadata Load (6.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
   [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6617535630868360695) /*application='Blog'*/[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-11-21 18:30:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.0ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 9.6ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 31.3ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 4.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 243.5ms | GC: 0.0ms)
+Completed 200 OK in 4699ms (Views: 368.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 18:30:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 18:30:23 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (895.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 2.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1138.6ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 12.7ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 14.8ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1163.6ms | GC: 0.0ms)
+Completed 200 OK in 4856ms (Views: 143.6ms | ActiveRecord: 1053.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-11-21 18:30:41 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 3.8ms | GC: 0.0ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 150.7ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 170.9ms | GC: 0.0ms)
+Completed 200 OK in 3881ms (Views: 239.1ms | ActiveRecord: 14.2ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-11-21 18:30:54 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'perdro@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5212ms (ActiveRecord: 10.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-21 18:31:03 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='Blog',controller='home'*/[0m
+  ↳ app/views/user/_session.html.erb:1
+  Rendered user/_session.html.erb (Duration: 25.8ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 28.3ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | GC: 0.0ms)
+Completed 200 OK in 3697ms (Views: 41.6ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 18:31:17 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 31.7ms | GC: 0.0ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/user/_session.html.erb:1
+  Rendered user/_session.html.erb (Duration: 27.5ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 34.1ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 89.5ms | GC: 0.0ms)
+Completed 200 OK in 3704ms (Views: 89.1ms | ActiveRecord: 3.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2025-11-21 18:31:29 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='Blog',controller='posts'*/[0m
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1032.2ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1046.7ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1065.4ms | GC: 0.0ms)
+Completed 200 OK in 4686ms (Views: 1069.4ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-11-21 18:31:56 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "post" => {"title" => "Por nós", "body" => "Deus é por nós"}, "commit" => "Create Post"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='posts'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+  [1m[36mPost Create (32.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views") VALUES ('Por nós', 'Deus é por nós', '2025-11-21 21:32:00.837993', '2025-11-21 21:32:00.837993', NULL) RETURNING "id" /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+Redirected to http://127.0.0.1:3000/posts/5
+Completed 302 Found in 3772ms (ActiveRecord: 37.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2025-11-21 18:32:04 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id" => "5"}
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 5 LIMIT 1 /*action='show',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:65:in 'PostsController#set_post'
+Completed 500 Internal Server Error in 3658ms (ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method '+' for nil):
+  
+app/controllers/posts_controller.rb:12:in 'PostsController#show'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (7.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-11-21 19:16:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (12.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 18.3ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 151.1ms | GC: 0.0ms)
+Completed 200 OK in 4213ms (Views: 222.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 19:17:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 19:17:58 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (569.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 2.5ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 813.6ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 15.4ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 18.2ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 876.3ms | GC: 0.0ms)
+Completed 200 OK in 4789ms (Views: 154.2ms | ActiveRecord: 754.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
