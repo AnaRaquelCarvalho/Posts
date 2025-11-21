@@ -7575,3 +7575,77 @@ Migrating to AddViewsToPosts (20251121171319)
   [1m[36mActiveRecord::InternalMetadata Load (9.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
   [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6617535630868360695) /*application='Blog'*/[0m
   [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-11-21 14:51:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 6.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 502.3ms | GC: 0.0ms)
+Completed 200 OK in 9926ms (Views: 1000.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 14:52:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-21 14:53:08 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | GC: 0.0ms)
+Completed 200 OK in 3980ms (Views: 15.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 14:54:16 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (575.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 3.7ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 927.5ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 934.5ms | GC: 0.0ms)
+Completed 200 OK in 6285ms (Views: 199.5ms | ActiveRecord: 766.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2025-11-21 14:54:34 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 304.8ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 535.6ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 543.4ms | GC: 0.0ms)
+Completed 200 OK in 5733ms (Views: 545.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-11-21 14:55:13 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "post" => {"title" => "Deus", "body" => "Deus meu bem maior"}, "commit" => "Create Post"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:28:in 'block in PostsController#create'
+  [1m[36mPost Create (28.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views") VALUES ('Deus', 'Deus meu bem maior', '2025-11-21 17:55:18.680313', '2025-11-21 17:55:18.680313', NULL) RETURNING "id" /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:28:in 'block in PostsController#create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:28:in 'block in PostsController#create'
+Redirected to http://127.0.0.1:3000/posts/2
+Completed 302 Found in 4490ms (ActiveRecord: 33.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2025-11-21 14:55:27 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id" => "2"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1 /*action='show',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:64:in 'PostsController#set_post'
+Completed 500 Internal Server Error in 7407ms (ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method '+' for nil):
+  
+app/controllers/posts_controller.rb:11:in 'PostsController#show'
