@@ -7762,3 +7762,314 @@ Migrating to DeviseCreateUsers (20251121192010)
   [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT /*application='Blog'*/[0m
   [1m[35m (2.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6617535630868360695) /*application='Blog'*/[0m
   [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2025-11-21 16:30:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (10.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 154.5ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 5.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1307.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 5757ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_alers with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial layouts/_alers with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial layouts/_alers with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+    17:   <body>
+    18:     <header>
+    19:       <%= render "layouts/navbar"%>
+    20:       <%= render "layouts/alers" %>
+    21:     </header>
+    22:     <main class="container">
+    23:       <%= yield %>
+  
+app/views/layouts/application.html.erb:20
+
+Information for cause: ActionView::MissingTemplate (Missing partial layouts/_alers with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+  
+app/views/layouts/application.html.erb:20
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 16:30:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-21 16:33:24 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 91.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 3778ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+    17:   <body>
+    18:     <header>
+    19:       <%= render "layouts/navbar"%>
+    20:       <%= render "layouts/alerts" %>
+    21:     </header>
+    22:     <main class="container">
+    23:       <%= yield %>
+  
+app/views/layouts/application.html.erb:20
+
+Information for cause: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+  
+app/views/layouts/application.html.erb:20
+Started GET "/" for 127.0.0.1 at 2025-11-21 16:34:49 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.9ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 3375ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+    28:   <body>
+    29:     <header>
+    30:       <%= render "layouts/navbar" %>
+    31:       <%= render "layouts/alerts" %>
+    32:     </header>
+    33: 
+    34:     <main class="container mt-3">
+  
+app/views/layouts/application.html.erb:31
+
+Information for cause: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+  
+app/views/layouts/application.html.erb:31
+Started GET "/" for 127.0.0.1 at 2025-11-21 16:35:04 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 10865ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+    28:   <body>
+    29:     <header>
+    30:       <%= render "layouts/navbar" %>
+    31:       <%= render "layouts/alerts" %>
+    32:     </header>
+    33: 
+    34:     <main class="container mt-3">
+  
+app/views/layouts/application.html.erb:31
+
+Information for cause: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+  
+app/views/layouts/application.html.erb:31
+Started GET "/" for 127.0.0.1 at 2025-11-21 16:36:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.6ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 5.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 263.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 4515ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+    28:   <body>
+    29:     <header>
+    30:       <%= render "layouts/navbar" %>
+    31:       <%= render "layouts/alerts" %>
+    32:     </header>
+    33: 
+    34:     <main class="container mt-3">
+  
+app/views/layouts/application.html.erb:31
+
+Information for cause: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+  
+app/views/layouts/application.html.erb:31
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 16:36:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
