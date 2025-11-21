@@ -15,12 +15,12 @@
   </head>
 
   <body>
-  <header>
-    <%= render "layouts/navbar" %>
-  </header>
-
-  <main class="container">
-    <%= yield %>
-  </main>
-</body>
+    <header>
+      <%= render "layouts/navbar"%>
+      <%= render "layouts/alers" %>
+    </header>
+    <main class="container">
+      <%= yield %>
+    </main>
+  </body>
 </html>

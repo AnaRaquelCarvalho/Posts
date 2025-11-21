@@ -7649,3 +7649,104 @@ Completed 500 Internal Server Error in 7407ms (ActiveRecord: 2.0ms (1 query, 0 c
 NoMethodError (undefined method '+' for nil):
   
 app/controllers/posts_controller.rb:11:in 'PostsController#show'
+Started GET "/" for 127.0.0.1 at 2025-11-21 15:08:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (9.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.0ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 8.7ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 327.5ms | GC: 0.2ms)
+Completed 200 OK in 5927ms (Views: 516.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 15:08:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 15:08:41 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (671.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 2.7ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 889.8ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 905.9ms | GC: 0.0ms)
+Completed 200 OK in 6292ms (Views: 104.0ms | ActiveRecord: 831.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2025-11-21 15:09:03 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:65:in 'PostsController#set_post'
+  [1m[36mPost Update All (9.5ms)[0m  [1m[33mUPDATE "posts" SET "views" = COALESCE("views", 0) + 1 WHERE "posts"."id" = 1 /*action='show',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:11:in 'PostsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 18.3ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | GC: 0.0ms)
+Completed 200 OK in 5474ms (Views: 53.6ms | ActiveRecord: 12.5ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2025-11-21 15:09:25 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 67.6ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 89.9ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 119.0ms | GC: 0.0ms)
+Completed 200 OK in 4633ms (Views: 123.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-11-21 15:09:56 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "post" => {"title" => "Filme ", "body" => "As tranças da vovó careca"}, "commit" => "Create Post"}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+  [1m[36mPost Create (29.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views") VALUES ('Filme ', 'As tranças da vovó careca', '2025-11-21 18:10:01.634759', '2025-11-21 18:10:01.634759', NULL) RETURNING "id" /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+Redirected to http://127.0.0.1:3000/posts/3
+Completed 302 Found in 4392ms (ActiveRecord: 31.6ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2025-11-21 15:10:07 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1 /*action='show',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:65:in 'PostsController#set_post'
+  [1m[36mPost Update All (2.2ms)[0m  [1m[33mUPDATE "posts" SET "views" = COALESCE("views", 0) + 1 WHERE "posts"."id" = 3 /*action='show',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:11:in 'PostsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.6ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | GC: 0.0ms)
+Completed 200 OK in 4102ms (Views: 28.1ms | ActiveRecord: 3.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 15:10:23 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 35.7ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | GC: 0.0ms)
+Completed 200 OK in 5564ms (Views: 49.8ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (13.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
