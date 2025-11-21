@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :posts
   get "estudantes/index"
   get "home", to: "home#index", as: "home"
