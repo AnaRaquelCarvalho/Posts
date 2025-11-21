@@ -8922,3 +8922,136 @@ Started GET "/users/sign_out" for 127.0.0.1 at 2025-11-21 18:18:55 -0300
   
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
   
+Started GET "/" for 127.0.0.1 at 2025-11-21 18:22:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (6.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 6.1ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 19.9ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 179.0ms | GC: 0.0ms)
+Completed 200 OK in 4446ms (Views: 261.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 18:22:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 18:22:56 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (459.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 2.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 647.1ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 6.6ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 8.7ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 670.2ms | GC: 0.0ms)
+Completed 200 OK in 4240ms (Views: 107.4ms | ActiveRecord: 596.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-11-21 18:23:15 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 5.1ms | GC: 0.0ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 140.8ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 155.2ms | GC: 0.0ms)
+Completed 200 OK in 3770ms (Views: 223.7ms | ActiveRecord: 15.2ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-11-21 18:23:27 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'perdro@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5613ms (ActiveRecord: 9.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-21 18:23:36 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='Blog',controller='home'*/[0m
+  ↳ app/views/user/_session.html.erb:1
+  Rendered user/_session.html.erb (Duration: 22.3ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 26.2ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | GC: 0.0ms)
+Completed 200 OK in 3434ms (Views: 38.4ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 18:23:49 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 35.8ms | GC: 0.0ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/user/_session.html.erb:1
+  Rendered user/_session.html.erb (Duration: 41.2ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 47.6ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 98.4ms | GC: 0.0ms)
+Completed 200 OK in 3745ms (Views: 103.1ms | ActiveRecord: 3.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2025-11-21 18:24:04 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='Blog',controller='posts'*/[0m
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 767.8ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 790.3ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 806.3ms | GC: 0.0ms)
+Completed 200 OK in 4386ms (Views: 811.8ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-11-21 18:24:30 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "post" => {"title" => "Tatu", "body" => "Tatu é bicho"}, "commit" => "Create Post"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='posts'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+  [1m[36mPost Create (20.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views") VALUES ('Tatu', 'Tatu é bicho', '2025-11-21 21:24:34.225531', '2025-11-21 21:24:34.225531', NULL) RETURNING "id" /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT /*action='create',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:29:in 'block in PostsController#create'
+Redirected to http://127.0.0.1:3000/posts/4
+Completed 302 Found in 3607ms (ActiveRecord: 28.0ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2025-11-21 18:24:38 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id" => "4"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 4 LIMIT 1 /*action='show',application='Blog',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:65:in 'PostsController#set_post'
+Completed 500 Internal Server Error in 3502ms (ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method '+' for nil):
+  
+app/controllers/posts_controller.rb:12:in 'PostsController#show'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
