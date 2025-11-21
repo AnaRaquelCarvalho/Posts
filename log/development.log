@@ -8073,3 +8073,553 @@ Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 16:36:57 -0300
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/" for 127.0.0.1 at 2025-11-21 16:38:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.1ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 5.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 197.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 4211ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+    28:   <body>
+    29:     <header>
+    30:       <%= render "layouts/navbar" %>
+    31:       <%= render "layouts/alerts" %>
+    32:     </header>
+    33: 
+    34:     <main class="container mt-3">
+  
+app/views/layouts/application.html.erb:31
+
+Information for cause: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+  
+app/views/layouts/application.html.erb:31
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 16:39:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-21 16:46:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.6ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 9.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 199.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 4209ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+Caused by: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+)
+
+Information for: ActionView::Template::Error (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+    28:   <body>
+    29:     <header>
+    30:       <%= render "layouts/navbar" %>
+    31:       <%= render "layouts/alerts" %>
+    32:     </header>
+    33: 
+    34:     <main class="container mt-3">
+  
+app/views/layouts/application.html.erb:31
+
+Information for cause: ActionView::MissingTemplate (Missing partial layouts/_alerts with {locale: [:en], formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/anaca/Documents/GitHub/Posts/app/views"
+  * "C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/turbo-rails-2.0.17/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actiontext-8.0.3/app/views"
+  * "C:/Users/anaca/.local/share/gem/ruby/3.4.0/gems/actionmailbox-8.0.3/app/views"
+):
+  
+app/views/layouts/application.html.erb:31
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 16:46:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-21 16:52:36 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 14.4ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 5.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 76.7ms | GC: 0.0ms)
+Completed 200 OK in 3440ms (Views: 120.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-11-21 16:53:08 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 4.5ms | GC: 0.0ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 631.9ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 641.2ms | GC: 0.0ms)
+Completed 200 OK in 4756ms (Views: 805.8ms | ActiveRecord: 111.9ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-11-21 16:53:22 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'pedro@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Completed 401 Unauthorized in 3582ms (ActiveRecord: 9.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 12.2ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | GC: 0.0ms)
+Completed 200 OK in 4886ms (Views: 27.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 16:56:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-11-21 16:58:54 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Content in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (8.0.3) lib/action_controller/metal/request_forgery_protection.rb:314:in 'ActionController::RequestForgeryProtection::ProtectionMethods::Exception#handle_unverified_request'
+actionpack (8.0.3) lib/action_controller/metal/request_forgery_protection.rb:408:in 'ActionController::RequestForgeryProtection#handle_unverified_request'
+devise (4.9.4) lib/devise/controllers/helpers.rb:257:in 'Devise::Controllers::Helpers#handle_unverified_request'
+actionpack (8.0.3) lib/action_controller/metal/request_forgery_protection.rb:397:in 'ActionController::RequestForgeryProtection#verify_authenticity_token'
+activesupport (8.0.3) lib/active_support/callbacks.rb:361:in 'block in ActiveSupport::Callbacks::CallTemplate::MethodCall#make_lambda'
+activesupport (8.0.3) lib/active_support/callbacks.rb:178:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+actionpack (8.0.3) lib/abstract_controller/callbacks.rb:34:in 'block (2 levels) in <module:Callbacks>'
+activesupport (8.0.3) lib/active_support/callbacks.rb:179:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.0.3) lib/active_support/callbacks.rb:559:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.0.3) lib/active_support/callbacks.rb:559:in 'Array#each'
+activesupport (8.0.3) lib/active_support/callbacks.rb:559:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.0.3) lib/active_support/callbacks.rb:118:in 'block in ActiveSupport::Callbacks#run_callbacks'
+activesupport (8.0.3) lib/active_support/callbacks.rb:140:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.3) lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+actionpack (8.0.3) lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+actionpack (8.0.3) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.0.3) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.0.3) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.0.3) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.0.3) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.0.3) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.0.3) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.0.3) lib/abstract_controller/base.rb:152:in 'AbstractController::Base#process'
+actionview (8.0.3) lib/action_view/rendering.rb:40:in 'ActionView::Rendering#process'
+actionpack (8.0.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.0.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.0.3) lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.0.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.0.3) lib/action_dispatch/routing/mapper.rb:32:in 'block in <class:Constraints>'
+actionpack (8.0.3) lib/action_dispatch/routing/mapper.rb:62:in 'ActionDispatch::Routing::Mapper::Constraints#serve'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.0.3) lib/action_dispatch/routing/route_set.rb:908:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.0.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+warden (1.2.9) lib/warden/manager.rb:36:in 'block in Warden::Manager#call'
+warden (1.2.9) lib/warden/manager.rb:34:in 'Kernel#catch'
+warden (1.2.9) lib/warden/manager.rb:34:in 'Warden::Manager#call'
+rack (3.2.3) lib/rack/tempfile_reaper.rb:20:in 'Rack::TempfileReaper#call'
+rack (3.2.3) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.3) lib/rack/conditional_get.rb:44:in 'Rack::ConditionalGet#call'
+rack (3.2.3) lib/rack/head.rb:15:in 'Rack::Head#call'
+actionpack (8.0.3) lib/action_dispatch/http/permissions_policy.rb:38:in 'ActionDispatch::PermissionsPolicy::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/http/content_security_policy.rb:38:in 'ActionDispatch::ContentSecurityPolicy::Middleware#call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in 'Rack::Session::Abstract::Persisted#context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in 'Rack::Session::Abstract::Persisted#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/cookies.rb:706:in 'ActionDispatch::Cookies#call'
+activerecord (8.0.3) lib/active_record/migration.rb:670:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.3) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.3) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.3) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+propshaft (1.3.1) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.3) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (7.0.4) lib/puma/configuration.rb:299:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.0.4) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.0.4) lib/puma/thread_pool.rb:346:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.0.4) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.0.4) lib/puma/server.rb:506:in 'Puma::Server#process_client'
+puma (7.0.4) lib/puma/server.rb:265:in 'block in Puma::Server#run'
+puma (7.0.4) lib/puma/thread_pool.rb:173:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 16:59:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-11-21 16:59:09 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Content in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (8.0.3) lib/action_controller/metal/request_forgery_protection.rb:314:in 'ActionController::RequestForgeryProtection::ProtectionMethods::Exception#handle_unverified_request'
+actionpack (8.0.3) lib/action_controller/metal/request_forgery_protection.rb:408:in 'ActionController::RequestForgeryProtection#handle_unverified_request'
+devise (4.9.4) lib/devise/controllers/helpers.rb:257:in 'Devise::Controllers::Helpers#handle_unverified_request'
+actionpack (8.0.3) lib/action_controller/metal/request_forgery_protection.rb:397:in 'ActionController::RequestForgeryProtection#verify_authenticity_token'
+activesupport (8.0.3) lib/active_support/callbacks.rb:361:in 'block in ActiveSupport::Callbacks::CallTemplate::MethodCall#make_lambda'
+activesupport (8.0.3) lib/active_support/callbacks.rb:178:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+actionpack (8.0.3) lib/abstract_controller/callbacks.rb:34:in 'block (2 levels) in <module:Callbacks>'
+activesupport (8.0.3) lib/active_support/callbacks.rb:179:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.0.3) lib/active_support/callbacks.rb:559:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.0.3) lib/active_support/callbacks.rb:559:in 'Array#each'
+activesupport (8.0.3) lib/active_support/callbacks.rb:559:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.0.3) lib/active_support/callbacks.rb:118:in 'block in ActiveSupport::Callbacks#run_callbacks'
+activesupport (8.0.3) lib/active_support/callbacks.rb:140:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.3) lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+actionpack (8.0.3) lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+actionpack (8.0.3) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.0.3) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.0.3) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.0.3) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.0.3) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.0.3) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.0.3) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.0.3) lib/abstract_controller/base.rb:152:in 'AbstractController::Base#process'
+actionview (8.0.3) lib/action_view/rendering.rb:40:in 'ActionView::Rendering#process'
+actionpack (8.0.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.0.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.0.3) lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.0.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.0.3) lib/action_dispatch/routing/mapper.rb:32:in 'block in <class:Constraints>'
+actionpack (8.0.3) lib/action_dispatch/routing/mapper.rb:62:in 'ActionDispatch::Routing::Mapper::Constraints#serve'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+actionpack (8.0.3) lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.0.3) lib/action_dispatch/routing/route_set.rb:908:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.0.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+warden (1.2.9) lib/warden/manager.rb:36:in 'block in Warden::Manager#call'
+warden (1.2.9) lib/warden/manager.rb:34:in 'Kernel#catch'
+warden (1.2.9) lib/warden/manager.rb:34:in 'Warden::Manager#call'
+rack (3.2.3) lib/rack/tempfile_reaper.rb:20:in 'Rack::TempfileReaper#call'
+rack (3.2.3) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.3) lib/rack/conditional_get.rb:44:in 'Rack::ConditionalGet#call'
+rack (3.2.3) lib/rack/head.rb:15:in 'Rack::Head#call'
+actionpack (8.0.3) lib/action_dispatch/http/permissions_policy.rb:38:in 'ActionDispatch::PermissionsPolicy::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/http/content_security_policy.rb:38:in 'ActionDispatch::ContentSecurityPolicy::Middleware#call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in 'Rack::Session::Abstract::Persisted#context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in 'Rack::Session::Abstract::Persisted#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/cookies.rb:706:in 'ActionDispatch::Cookies#call'
+activerecord (8.0.3) lib/active_record/migration.rb:670:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.3) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.3) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.3) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+propshaft (1.3.1) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.3) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (7.0.4) lib/puma/configuration.rb:299:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.0.4) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.0.4) lib/puma/thread_pool.rb:346:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.0.4) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.0.4) lib/puma/server.rb:506:in 'Puma::Server#process_client'
+puma (7.0.4) lib/puma/server.rb:265:in 'block in Puma::Server#run'
+puma (7.0.4) lib/puma/thread_pool.rb:173:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 16:59:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-11-21 16:59:59 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 11.8ms | GC: 0.2ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 167.4ms | GC: 0.2ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 181.4ms | GC: 0.2ms)
+Completed 200 OK in 3680ms (Views: 374.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-11-21 17:00:40 -0300
+Started POST "/users" for 127.0.0.1 at 2025-11-21 17:00:41 -0300
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "password_confirmation" => "[FILTERED]"}, "commit" => "Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 31.9ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 92.8ms | GC: 0.0ms)
+Completed 200 OK in 5516ms (Views: 104.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*action='create',application='Blog',controller='registrations'*/[0m
+  [1m[36mUser Exists? (49.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'perdro@gmail.com' LIMIT 1 /*action='create',application='Blog',controller='registrations'*/[0m
+  [1m[36mUser Create (11.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ('perdro@gmail.com', '$2a$12$zZKzhA5M97ywcxDCcPEUQuFQ8ElyPJ1MDBkbiwFikRx81Hckp.ySu', NULL, NULL, NULL, '2025-11-21 20:00:50.004908', '2025-11-21 20:00:50.004908') RETURNING "id" /*action='create',application='Blog',controller='registrations'*/[0m
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT /*action='create',application='Blog',controller='registrations'*/[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 7066ms (ActiveRecord: 105.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-21 17:00:53 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | GC: 0.0ms)
+Completed 200 OK in 3330ms (Views: 19.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 17:01:27 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (7.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 2.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 170.1ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 188.1ms | GC: 0.0ms)
+Completed 200 OK in 3526ms (Views: 144.8ms | ActiveRecord: 72.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-11-21 17:02:30 -0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='Blog',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 47ms (ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-21 17:02:34 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | GC: 0.0ms)
+Completed 200 OK in 3464ms (Views: 22.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 17:02:47 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 41.9ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | GC: 0.0ms)
+Completed 200 OK in 4291ms (Views: 70.4ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 17:03:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/posts" for 127.0.0.1 at 2025-11-21 17:04:58 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Blog',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 30.3ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | GC: 0.0ms)
+Completed 200 OK in 3674ms (Views: 45.8ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 17:05:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 17:05:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 17:05:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-21 17:05:24 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 86.7ms | GC: 0.0ms)
+Completed 200 OK in 3639ms (Views: 89.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 17:05:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-11-21 17:05:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 11.6ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | GC: 0.0ms)
+Completed 200 OK in 4174ms (Views: 25.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-11-21 17:06:51 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'perdro@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 6804ms (ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-21 17:07:04 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | GC: 0.0ms)
+Completed 200 OK in 3620ms (Views: 22.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-21 17:07:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
