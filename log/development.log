@@ -9371,3 +9371,181 @@ Started GET "/users/sign_out" for 127.0.0.1 at 2025-11-21 19:25:45 -0300
   
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
   
+Started GET "/" for 127.0.0.1 at 2025-11-21 19:28:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (9.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.1ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 6.8ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 31.2ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 20.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 244.1ms | GC: 0.0ms)
+Completed 200 OK in 5495ms (Views: 371.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 19:28:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-11-21 19:28:32 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 12.6ms | GC: 0.2ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 207.0ms | GC: 0.2ms)
+  Rendered user/_session.html.erb (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 12.4ms | GC: 0.2ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 240.9ms | GC: 0.3ms)
+Completed 200 OK in 4852ms (Views: 321.5ms | ActiveRecord: 113.9ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-11-21 19:28:45 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (10.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5650ms (ActiveRecord: 10.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-21 19:28:55 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='Blog',controller='home'*/[0m
+  ↳ app/views/user/_session.html.erb:1
+  Rendered user/_session.html.erb (Duration: 24.6ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 27.7ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 41.4ms | GC: 0.0ms)
+Completed 200 OK in 3717ms (Views: 42.5ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2025-11-21 19:30:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2025-11-21 20:08:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-21 20:11:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.5ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 5.1ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 42.2ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 7.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 271.0ms | GC: 0.0ms)
+Completed 200 OK in 4672ms (Views: 361.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-11-21 20:11:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-11-21 20:11:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 18.5ms | GC: 0.0ms)
+  Rendered C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 208.1ms | GC: 0.5ms)
+  Rendered user/_session.html.erb (Duration: 9.1ms | GC: 0.2ms)
+  Rendered layouts/_navbar.html.erb (Duration: 15.6ms | GC: 0.2ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 243.3ms | GC: 0.8ms)
+Completed 200 OK in 4714ms (Views: 321.8ms | ActiveRecord: 113.7ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-11-21 20:12:09 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5761ms (ActiveRecord: 11.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-21 20:12:19 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='Blog',controller='home'*/[0m
+  ↳ app/views/user/_session.html.erb:1
+  Rendered user/_session.html.erb (Duration: 19.8ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 23.9ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | GC: 0.0ms)
+Completed 200 OK in 3700ms (Views: 43.9ms | ActiveRecord: 1.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2025-11-21 20:12:34 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='destroy',application='Blog',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 4667ms (ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-21 20:12:43 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | GC: 0.0ms)
+  Rendered user/_session.html.erb (Duration: 3.7ms | GC: 0.0ms)
+  Rendered layouts/_navbar.html.erb (Duration: 5.9ms | GC: 0.0ms)
+  Rendered layouts/_alerts.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | GC: 0.0ms)
+Completed 200 OK in 3634ms (Views: 23.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mPost Load (495.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /* loading for pp */ LIMIT 11 /*application='Blog'*/[0m
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*application='Blog'*/[0m
+  [1m[36mPost Destroy (9.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 2 /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*application='Blog'*/[0m
+  [1m[36mPost Destroy (4.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 1 /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*application='Blog'*/[0m
+  [1m[36mPost Destroy (5.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 3 /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN /*application='Blog'*/[0m
+  [1m[36mPost Destroy (5.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 4 /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN /*application='Blog'*/[0m
+  [1m[36mPost Destroy (4.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 5 /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*application='Blog'*/[0m
+  [1m[36mPost Destroy (4.0ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 6 /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT /*application='Blog'*/[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (9.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+Migrating to AddUserToPosts (20251122000913)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*application='Blog'*/[0m
+  [1m[35m (72.9ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" bigint NOT NULL /*application='Blog'*/[0m
+  [1m[35m (23.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_user_id" ON "posts" ("user_id") /*application='Blog'*/[0m
+  [1m[35m (31.6ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+ /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251122000913') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='Blog'*/[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(6617535630868360695) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
