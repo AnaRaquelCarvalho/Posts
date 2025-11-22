@@ -1,16 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
   
-  resources :posts
-  
-  # Estudantes
-  get "estudantes/index"
-  get "estudantes", to: "estudantes#index", as: "estudantes"
+  # /posts/1/comments/2
+  resources :posts do
+    resources :comments
+  end
 
-  # Páginas gerais
-  get "home",  to: "home#index",  as: "home"
-  get "about", to: "pages#about", as: "about"
+  get "inicio", controller: "home", action: "index", as: "home"
+  # get "estudante", to: "estudante#index", as: "estudantes"
 
-  # Página inicial
   root "home#index"
+
 end
